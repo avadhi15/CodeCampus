@@ -11,9 +11,11 @@ import Dashboard from './pages/teacher/Dashboard'
 import AddCourse from './pages/teacher/AddCourse'
 import MyCourses from './pages/teacher/MyCourses'
 import StudentsEnroll from './pages/teacher/StudentsEnroll'
+import Navbar from './components/student/Navbar'
 const App = () => {
   return (
-    <div>
+    <div className='min-h-screen text-default bg-white'>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/course-list' element={<CourseList/>} />
