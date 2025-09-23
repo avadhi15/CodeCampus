@@ -45,7 +45,7 @@ const {user} = useUser();
         
         </div>
         {
-          user ? <UserButton/>:
+          user ? <UserButton/> :
             <button onClick={()=> openSignIn()}><img src={assets.user_icon} alt="" /></button>
         }
       
